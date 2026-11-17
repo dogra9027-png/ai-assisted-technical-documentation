@@ -12,9 +12,9 @@ use_directory_urls: false
 theme:
   name: readthedocs
   navigation_depth: 3
-
+extra_css:
+  - style.css
 nav:
-  - Home: index.html
   - Project Overview:
       - Product Overview: 01-product-specifications/product-overview.md
       - Feature Specifications: 01-product-specifications/feature-specifications.md
