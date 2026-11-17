@@ -1,0 +1,49 @@
+
+site_name: AI-Assisted Technical Documentation
+site_description: A technical writing portfolio project by Dimple Dogra
+site_author: Dimple Dogra
+site_url: https://dogra9027-png.github.io/ai-assisted-technical-documentation/
+
+docs_dir: .
+site_dir: ../site
+
+use_directory_urls: false
+
+theme:
+  name: readthedocs
+  navigation_depth: 3
+
+nav:
+  - Home: index.html
+  - Project Overview:
+      - Product Overview: 01-product-specifications/product-overview.md
+      - Feature Specifications: 01-product-specifications/feature-specifications.md
+  - Documentation Standards:
+      - Style Guide: 02-style-guide/documentation-style-guide.md
+      - Terminology Glossary: 02-style-guide/terminology-glossary.md
+  - Technical Documentation:
+      - Getting Started: 03-technical-documentation/getting-started.md
+      - Installation Guide: 03-technical-documentation/installation-guide.md
+      - Configuration Guide: 03-technical-documentation/configuration-guide.md
+      - Troubleshooting Guide: 03-technical-documentation/troubleshooting-guide.md
+      - Alert Management Guide: 03-technical-documentation/alert-management-guide.md
+  - AI Workflow:
+      - Documentation Workflow: 04-ai-workflow/ai-documentation-workflow.md
+      - Drafting Process: 04-ai-workflow/ai-drafting-process.md
+      - Human Validation: 04-ai-workflow/human-validation-process.md
+  - Prompt Library:
+      - Technical Drafting Prompts: 05-prompt-library/technical-drafting-prompts.md
+      - Content Review Prompts: 05-prompt-library/content-review-prompts.md
+      - Release Notes Prompts: 05-prompt-library/release-notes-prompts.md
+  - Quality Assurance:
+      - AI Review Checklist: 06-quality-assurance/ai-review-checklist.md
+      - Documentation Audit: 06-quality-assurance/documentation-audit.md
+  - Release Notes:
+      - Version 1.1: 07-release-notes/release-notes-v1.1.md
+  - Training:
+      - Instructional Video Script: 08-training/instructional-video-script.md
+  - Evidence:
+      - Source Analysis: 09-evidence/alert-management-source-analysis.md
+      - Original AI Draft: 09-evidence/alert-management-ai-draft-v1.md
+      - Review Record: 09-evidence/alert-management-review-record.md
+      - Project Validation: 09-evidence/project-validation-record.md
