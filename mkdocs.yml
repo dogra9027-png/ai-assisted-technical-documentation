@@ -4,7 +4,7 @@ site_description: A technical writing portfolio project by Dimple Dogra
 site_author: Dimple Dogra
 site_url: https://dogra9027-png.github.io/ai-assisted-technical-documentation/
 
-docs_dir: .
+docs_dir: docs
 site_dir: ../site
 
 use_directory_urls: false
@@ -12,8 +12,7 @@ use_directory_urls: false
 theme:
   name: readthedocs
   navigation_depth: 3
-extra_css:
-  - style.css
+
 nav:
   - Project Overview:
       - Product Overview: 01-product-specifications/product-overview.md
