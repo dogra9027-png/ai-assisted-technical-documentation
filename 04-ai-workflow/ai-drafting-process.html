@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Dimple Dogra" /><link rel="canonical" href="https://dogra9027-png.github.io/ai-assisted-technical-documentation/04-ai-workflow/ai-drafting-process.html" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Drafting Process - AI-Assisted Technical Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Drafting Process";
+        var mkdocs_page_input_path = "04-ai-workflow/ai-drafting-process.md";
+        var mkdocs_page_url = "/ai-assisted-technical-documentation/04-ai-workflow/ai-drafting-process.html";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> AI-Assisted Technical Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/product-overview.html">Product Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/feature-specifications.html">Feature Specifications</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Documentation Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/documentation-style-guide.html">Style Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/terminology-glossary.html">Terminology Glossary</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/getting-started.html">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/installation-guide.html">Installation Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/configuration-guide.html">Configuration Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/troubleshooting-guide.html">Troubleshooting Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/alert-management-guide.html">Alert Management Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI Workflow</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="ai-documentation-workflow.html">Documentation Workflow</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Drafting Process</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-purpose">1. Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-preparing-for-ai-assisted-drafting">2. Preparing for AI-Assisted Drafting</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-identify-the-document-type">2.1 Identify the Document Type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-identify-the-audience">2.2 Identify the Audience</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-gather-source-material">2.3 Gather Source Material</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-prompt-structure">3. Prompt Structure</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-drafting-process">4. Drafting Process</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-request-a-document-outline">Step 1: Request a Document Outline</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-generate-section-content">Step 2: Generate Section Content</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-review-the-initial-draft">Step 3: Review the Initial Draft</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-4-refine-the-content">Step 4: Refine the Content</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-5-consolidate-the-document">Step 5: Consolidate the Document</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-6-complete-human-review">Step 6: Complete Human Review</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-example-nexus-configuration-guide">5. Example: Nexus Configuration Guide</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-iterative-improvement">6. Iterative Improvement</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-common-drafting-problems">7. Common Drafting Problems</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-responsible-use">8. Responsible Use</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-related-documents">9. Related Documents</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="human-validation-process.html">Human Validation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prompt Library</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/technical-drafting-prompts.html">Technical Drafting Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/content-review-prompts.html">Content Review Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/release-notes-prompts.html">Release Notes Prompts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/ai-review-checklist.html">AI Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/documentation-audit.html">Documentation Audit</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Release Notes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../07-release-notes/release-notes-v1.1.html">Version 1.1</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Training</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../08-training/instructional-video-script.html">Instructional Video Script</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evidence</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-source-analysis.html">Source Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-ai-draft-v1.html">Original AI Draft</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-review-record.html">Review Record</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/project-validation-record.html">Project Validation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">AI-Assisted Technical Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AI Workflow</li>
+      <li class="breadcrumb-item active">Drafting Process</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ai-assisted-drafting-process">AI-Assisted Drafting Process</h1>
+<p><strong>Project:</strong> Nexus IT Operations Platform<br />
+<strong>Document Type:</strong> Process Guide<br />
+<strong>Version:</strong> 1.0<br />
+<strong>Date:</strong> November 16, 2026</p>
+<hr />
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This document describes the practical process used to develop technical documentation with generative AI assistance.</p>
+<p>The process focuses on preparing structured prompts, supplying approved source information, reviewing generated content, and refining drafts to meet documentation requirements.</p>
+<p>AI-generated content is considered a starting point. The technical writer remains responsible for the final document.</p>
+<h2 id="2-preparing-for-ai-assisted-drafting">2. Preparing for AI-Assisted Drafting</h2>
+<p>Before using AI, establish the requirements for the document.</p>
+<h3 id="21-identify-the-document-type">2.1 Identify the Document Type</h3>
+<p>Determine whether the requested output is:</p>
+<ul>
+<li>Product documentation.</li>
+<li>User guide.</li>
+<li>Administrator guide.</li>
+<li>Installation guide.</li>
+<li>Configuration guide.</li>
+<li>Troubleshooting guide.</li>
+<li>Training material.</li>
+<li>Release notes.</li>
+</ul>
+<p>The document type determines the structure, level of detail, and writing style.</p>
+<h3 id="22-identify-the-audience">2.2 Identify the Audience</h3>
+<p>Define the intended reader and their expected technical knowledge.</p>
+<p>For example:</p>
+<table>
+<thead>
+<tr>
+<th>Audience</th>
+<th>Documentation Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>End users</td>
+<td>Navigation and everyday tasks</td>
+</tr>
+<tr>
+<td>System administrators</td>
+<td>Configuration and access management</td>
+</tr>
+<tr>
+<td>Operations analysts</td>
+<td>Monitoring, alerts, and incident handling</td>
+</tr>
+<tr>
+<td>Support teams</td>
+<td>Troubleshooting and issue escalation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23-gather-source-material">2.3 Gather Source Material</h3>
+<p>Provide relevant approved information, such as:</p>
+<ul>
+<li>Product specifications.</li>
+<li>Feature requirements.</li>
+<li>Terminology glossary.</li>
+<li>Existing style guide.</li>
+<li>Relevant technical references.</li>
+</ul>
+<p>Do not ask AI to invent missing product details.</p>
+<p>If required information is unavailable, record it as an open question.</p>
+<h2 id="3-prompt-structure">3. Prompt Structure</h2>
+<p>A useful documentation prompt should contain the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Role</td>
+<td>Defines the perspective AI should adopt</td>
+</tr>
+<tr>
+<td>Context</td>
+<td>Explains the product and documentation task</td>
+</tr>
+<tr>
+<td>Audience</td>
+<td>Identifies the intended reader</td>
+</tr>
+<tr>
+<td>Source material</td>
+<td>Establishes the approved information</td>
+</tr>
+<tr>
+<td>Requirements</td>
+<td>Defines the required content</td>
+</tr>
+<tr>
+<td>Constraints</td>
+<td>Identifies information that must not be invented</td>
+</tr>
+<tr>
+<td>Output format</td>
+<td>Specifies the expected structure</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-drafting-process">4. Drafting Process</h2>
+<h3 id="step-1-request-a-document-outline">Step 1: Request a Document Outline</h3>
+<p>Ask AI to propose a structure based on the document purpose, audience, and source information.</p>
+<p>Review the outline before generating the full document.</p>
+<h3 id="step-2-generate-section-content">Step 2: Generate Section Content</h3>
+<p>Develop the document in manageable sections.</p>
+<p>Provide the relevant source information and ask AI to produce clear, audience-appropriate content.</p>
+<h3 id="step-3-review-the-initial-draft">Step 3: Review the Initial Draft</h3>
+<p>Check whether the draft:</p>
+<ul>
+<li>Covers the required topics.</li>
+<li>Uses approved product terminology.</li>
+<li>Follows the intended structure.</li>
+<li>Avoids unsupported technical claims.</li>
+<li>Addresses the reader's needs.</li>
+</ul>
+<h3 id="step-4-refine-the-content">Step 4: Refine the Content</h3>
+<p>Use follow-up prompts to improve:</p>
+<ul>
+<li>Clarity.</li>
+<li>Conciseness.</li>
+<li>Instructional flow.</li>
+<li>Heading organization.</li>
+<li>Tables and lists.</li>
+<li>Consistency.</li>
+</ul>
+<h3 id="step-5-consolidate-the-document">Step 5: Consolidate the Document</h3>
+<p>Combine the approved sections and review the document as a complete deliverable.</p>
+<p>Check for duplicated content, inconsistent terminology, missing sections, and incorrect cross-references.</p>
+<h3 id="step-6-complete-human-review">Step 6: Complete Human Review</h3>
+<p>Compare the final draft with the approved source material and documentation standards.</p>
+<p>Record unresolved questions rather than presenting assumptions as facts.</p>
+<h2 id="5-example-nexus-configuration-guide">5. Example: Nexus Configuration Guide</h2>
+<p>The following example illustrates how a structured prompt can be used to develop an administrator guide.</p>
+<p><strong>Prompt objective:</strong> Create a configuration guide for system administrators.</p>
+<p><strong>Source information:</strong></p>
+<ul>
+<li>Nexus is a fictional IT operations platform.</li>
+<li>Administrators manage user accounts and roles.</li>
+<li>The platform uses role-based access control.</li>
+<li>Monitoring and alert management are defined in the feature specifications.</li>
+<li>Exact technical configuration values have not been supplied.</li>
+</ul>
+<p><strong>Drafting instructions:</strong></p>
+<ol>
+<li>Organize the content into logical configuration sections.</li>
+<li>Explain each configuration area in clear language.</li>
+<li>Use the approved role names and terminology.</li>
+<li>Do not invent commands, ports, server requirements, or configuration values.</li>
+<li>Clearly identify conceptual procedures.</li>
+<li>Include related documentation references.</li>
+</ol>
+<p><strong>Expected output:</strong> A structured administrator guide with configuration explanations, review considerations, and appropriate limitations.</p>
+<h2 id="6-iterative-improvement">6. Iterative Improvement</h2>
+<p>AI-assisted drafting is an iterative process.</p>
+<table>
+<thead>
+<tr>
+<th>Iteration</th>
+<th>Activity</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Generate outline</td>
+<td>Proposed document structure</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Generate initial content</td>
+<td>First draft</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Review technical content</td>
+<td>Identified gaps and inaccuracies</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Refine language</td>
+<td>Improved readability and consistency</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Review complete document</td>
+<td>Consolidated draft</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Human validation</td>
+<td>Reviewed portfolio deliverable</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-common-drafting-problems">7. Common Drafting Problems</h2>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Recommended Approach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI invents product functionality</td>
+<td>Restrict output to supplied specifications</td>
+</tr>
+<tr>
+<td>Content is too general</td>
+<td>Provide audience and task-specific context</td>
+</tr>
+<tr>
+<td>Instructions are too complex</td>
+<td>Request shorter, sequential steps</td>
+</tr>
+<tr>
+<td>Terminology is inconsistent</td>
+<td>Supply the approved glossary</td>
+</tr>
+<tr>
+<td>Sections contain repeated information</td>
+<td>Request a consistency and duplication review</td>
+</tr>
+<tr>
+<td>Technical details are missing</td>
+<td>Record questions for SME confirmation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-responsible-use">8. Responsible Use</h2>
+<p>When using AI for documentation:</p>
+<ul>
+<li>Use only information authorized for the selected AI tool.</li>
+<li>Avoid confidential customer or company information unless explicitly approved.</li>
+<li>Do not treat generated content as verified technical guidance.</li>
+<li>Check facts against authoritative references.</li>
+<li>Preserve human review and approval.</li>
+<li>Disclose AI assistance when required by organizational policy.</li>
+</ul>
+<h2 id="9-related-documents">9. Related Documents</h2>
+<ul>
+<li><a href="ai-documentation-workflow.html">AI Documentation Workflow</a></li>
+<li><a href="human-validation-process.html">Human Validation Process</a></li>
+<li><a href="../05-prompt-library/technical-drafting-prompts.html">Technical Drafting Prompts</a></li>
+<li><a href="../05-prompt-library/content-review-prompts.html">Content Review Prompts</a></li>
+<li><a href="../02-style-guide/documentation-style-guide.html">Documentation Style Guide</a></li>
+</ul>
+<hr />
+<p><strong>Document Status:</strong> Portfolio Demonstration<br />
+<strong>Key Principle:</strong> Structured prompts improve the quality of initial drafts, but human judgment determines whether the final documentation is suitable for use.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="ai-documentation-workflow.html" class="btn btn-neutral float-left" title="Documentation Workflow"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="human-validation-process.html" class="btn btn-neutral float-right" title="Human Validation">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="ai-documentation-workflow.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="human-validation-process.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

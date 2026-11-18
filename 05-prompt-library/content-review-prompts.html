@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Dimple Dogra" /><link rel="canonical" href="https://dogra9027-png.github.io/ai-assisted-technical-documentation/05-prompt-library/content-review-prompts.html" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Content Review Prompts - AI-Assisted Technical Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Content Review Prompts";
+        var mkdocs_page_input_path = "05-prompt-library/content-review-prompts.md";
+        var mkdocs_page_url = "/ai-assisted-technical-documentation/05-prompt-library/content-review-prompts.html";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> AI-Assisted Technical Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/product-overview.html">Product Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/feature-specifications.html">Feature Specifications</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Documentation Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/documentation-style-guide.html">Style Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/terminology-glossary.html">Terminology Glossary</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/getting-started.html">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/installation-guide.html">Installation Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/configuration-guide.html">Configuration Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/troubleshooting-guide.html">Troubleshooting Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/alert-management-guide.html">Alert Management Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI Workflow</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-documentation-workflow.html">Documentation Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-drafting-process.html">Drafting Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/human-validation-process.html">Human Validation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prompt Library</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="technical-drafting-prompts.html">Technical Drafting Prompts</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Content Review Prompts</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-purpose">1. Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-grammar-and-editorial-review">2. Grammar and Editorial Review</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-clarity-and-readability-review">3. Clarity and Readability Review</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-terminology-consistency-review">4. Terminology Consistency Review</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-procedural-documentation-review">5. Procedural Documentation Review</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-style-guide-compliance-review">6. Style Guide Compliance Review</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-cross-document-consistency-review">7. Cross-Document Consistency Review</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-quality-review-summary">8. Quality Review Summary</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-responsible-use-guidelines">9. Responsible Use Guidelines</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="release-notes-prompts.html">Release Notes Prompts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/ai-review-checklist.html">AI Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/documentation-audit.html">Documentation Audit</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Release Notes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../07-release-notes/release-notes-v1.1.html">Version 1.1</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Training</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../08-training/instructional-video-script.html">Instructional Video Script</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evidence</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-source-analysis.html">Source Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-ai-draft-v1.html">Original AI Draft</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-review-record.html">Review Record</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/project-validation-record.html">Project Validation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">AI-Assisted Technical Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Prompt Library</li>
+      <li class="breadcrumb-item active">Content Review Prompts</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ai-assisted-content-review-prompts">AI-Assisted Content Review Prompts</h1>
+<p><strong>Project:</strong> Nexus IT Operations Platform<br />
+<strong>Document Type:</strong> Reusable Prompt Collection<br />
+<strong>Version:</strong> 1.0<br />
+<strong>Date:</strong> November 16, 2026</p>
+<hr />
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This document provides reusable prompts for reviewing and improving technical documentation with AI assistance.</p>
+<p>The prompts support editorial review, terminology checks, consistency analysis, readability improvements, and documentation quality assessment.</p>
+<p>AI review results are suggestions. A human reviewer must evaluate findings before applying changes.</p>
+<h2 id="2-grammar-and-editorial-review">2. Grammar and Editorial Review</h2>
+<p><strong>Use case:</strong> Identify grammar, spelling, and sentence-structure issues.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Act as an experienced technical editor.</p>
+<p>Review the following technical documentation for:</p>
+<ul>
+<li>Grammar and spelling.</li>
+<li>Punctuation.</li>
+<li>Sentence structure.</li>
+<li>Unnecessary repetition.</li>
+<li>Awkward phrasing.</li>
+<li>Inconsistent capitalization.</li>
+</ul>
+<p>Preserve the original technical meaning.</p>
+<p>Do not introduce new product claims or remove important warnings.</p>
+<p>Return:</p>
+<ol>
+<li>A revised version of the content.</li>
+<li>A table of significant changes.</li>
+<li>Any statements requiring technical clarification.</li>
+</ol>
+<p>Content:</p>
+<p>[Paste content here]</p>
+</blockquote>
+<p><strong>Expected output:</strong> An edited draft with a summary of significant changes.</p>
+<h2 id="3-clarity-and-readability-review">3. Clarity and Readability Review</h2>
+<p><strong>Use case:</strong> Improve content for a specific audience.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Review this document for clarity and readability.</p>
+<p>Intended audience: [Insert audience]</p>
+<p>Document purpose: [Insert purpose]</p>
+<p>Identify sentences that are difficult to understand, overly complex, vague, or unnecessarily long.</p>
+<p>Recommend clearer alternatives while preserving technical accuracy.</p>
+<p>Check whether instructions are easy to follow and whether technical terms are explained appropriately.</p>
+<p>Return findings in a table containing the original wording, issue, and recommended revision.</p>
+<p>Do not invent missing technical details.</p>
+<p>Content:</p>
+<p>[Paste content here]</p>
+</blockquote>
+<p><strong>Expected output:</strong> Audience-focused editorial recommendations.</p>
+<h2 id="4-terminology-consistency-review">4. Terminology Consistency Review</h2>
+<p><strong>Use case:</strong> Check whether approved product terminology is used consistently.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Review the following document against the supplied terminology glossary.</p>
+<p>Identify:</p>
+<ul>
+<li>Incorrect terminology.</li>
+<li>Alternative terms used for the same concept.</li>
+<li>Incorrect capitalization.</li>
+<li>Undefined acronyms.</li>
+<li>Inconsistent interface labels.</li>
+</ul>
+<p>Use the approved glossary as the reference.</p>
+<p>Do not replace terms with alternatives unless the glossary supports the change.</p>
+<p>Return a table with the current term, approved term, location, and recommended correction.</p>
+<p>Glossary:</p>
+<p>[Paste glossary here]</p>
+<p>Document:</p>
+<p>[Paste document here]</p>
+</blockquote>
+<p><strong>Expected output:</strong> A terminology consistency report.</p>
+<h2 id="5-procedural-documentation-review">5. Procedural Documentation Review</h2>
+<p><strong>Use case:</strong> Review step-by-step instructions.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Review the following procedure from the perspective of an end user.</p>
+<p>Check whether:</p>
+<ul>
+<li>Prerequisites are clearly stated.</li>
+<li>Steps appear in the correct logical order.</li>
+<li>Each step describes a clear action.</li>
+<li>Important warnings are included.</li>
+<li>Expected outcomes are explained.</li>
+<li>The procedure contains unsupported assumptions.</li>
+</ul>
+<p>Identify ambiguous instructions and suggest improvements.</p>
+<p>Do not invent interface elements or product behaviour.</p>
+<p>Return findings in a table with step number, issue, impact, and recommendation.</p>
+<p>Procedure:</p>
+<p>[Paste procedure here]</p>
+</blockquote>
+<p><strong>Expected output:</strong> A procedural review report.</p>
+<h2 id="6-style-guide-compliance-review">6. Style Guide Compliance Review</h2>
+<p><strong>Use case:</strong> Check whether documentation follows an approved writing standard.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Review this document against the supplied documentation style guide.</p>
+<p>Assess:</p>
+<ul>
+<li>Heading structure.</li>
+<li>Sentence case.</li>
+<li>Active voice.</li>
+<li>Tone and language.</li>
+<li>Numbered procedures.</li>
+<li>Tables and lists.</li>
+<li>Terminology.</li>
+<li>Accessibility and readability.</li>
+</ul>
+<p>Identify deviations and suggest corrections.</p>
+<p>Separate style issues from technical accuracy concerns.</p>
+<p>Do not rewrite technical facts.</p>
+<p>Style guide:</p>
+<p>[Paste style guide here]</p>
+<p>Document:</p>
+<p>[Paste document here]</p>
+</blockquote>
+<p><strong>Expected output:</strong> A style compliance review.</p>
+<h2 id="7-cross-document-consistency-review">7. Cross-Document Consistency Review</h2>
+<p><strong>Use case:</strong> Identify contradictions across related documentation.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Compare the following documents for consistency.</p>
+<p>Check product names, feature descriptions, role permissions, status values, terminology, and references.</p>
+<p>Identify conflicting statements, duplicated explanations, and differences in terminology.</p>
+<p>For each finding, identify the affected documents and recommend which source should be used as the authoritative reference.</p>
+<p>Do not decide between conflicting statements without sufficient source evidence.</p>
+<p>Documents:</p>
+<p>[Paste relevant documents here]</p>
+</blockquote>
+<p><strong>Expected output:</strong> A cross-document consistency report.</p>
+<h2 id="8-quality-review-summary">8. Quality Review Summary</h2>
+<p><strong>Use case:</strong> Prepare a concise summary of review findings.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Summarize the findings from the completed documentation review.</p>
+<p>Organize the findings into:</p>
+<ul>
+<li>Critical accuracy issues.</li>
+<li>Missing information.</li>
+<li>Editorial improvements.</li>
+<li>Terminology corrections.</li>
+<li>Reference and formatting issues.</li>
+<li>Items requiring SME confirmation.</li>
+</ul>
+<p>Include a recommended next action for each finding.</p>
+<p>Do not describe an issue as resolved unless the supplied evidence confirms the correction.</p>
+</blockquote>
+<p><strong>Expected output:</strong> A review summary suitable for documentation tracking.</p>
+<h2 id="9-responsible-use-guidelines">9. Responsible Use Guidelines</h2>
+<ul>
+<li>Provide only information authorized for AI processing.</li>
+<li>Use approved references when checking product-specific terminology.</li>
+<li>Treat AI findings as recommendations, not verified defects.</li>
+<li>Review proposed changes before applying them.</li>
+<li>Preserve technical meaning and important warnings.</li>
+<li>Escalate unresolved technical questions to qualified reviewers.</li>
+</ul>
+<hr />
+<p><strong>Document Status:</strong> Portfolio Demonstration<br />
+<strong>Purpose:</strong> Reusable prompts for AI-assisted technical content review and quality improvement.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="technical-drafting-prompts.html" class="btn btn-neutral float-left" title="Technical Drafting Prompts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="release-notes-prompts.html" class="btn btn-neutral float-right" title="Release Notes Prompts">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="technical-drafting-prompts.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="release-notes-prompts.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

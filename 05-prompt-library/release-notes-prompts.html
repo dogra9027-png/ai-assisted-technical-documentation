@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Dimple Dogra" /><link rel="canonical" href="https://dogra9027-png.github.io/ai-assisted-technical-documentation/05-prompt-library/release-notes-prompts.html" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Release Notes Prompts - AI-Assisted Technical Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Release Notes Prompts";
+        var mkdocs_page_input_path = "05-prompt-library/release-notes-prompts.md";
+        var mkdocs_page_url = "/ai-assisted-technical-documentation/05-prompt-library/release-notes-prompts.html";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> AI-Assisted Technical Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/product-overview.html">Product Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/feature-specifications.html">Feature Specifications</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Documentation Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/documentation-style-guide.html">Style Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/terminology-glossary.html">Terminology Glossary</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/getting-started.html">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/installation-guide.html">Installation Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/configuration-guide.html">Configuration Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/troubleshooting-guide.html">Troubleshooting Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/alert-management-guide.html">Alert Management Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI Workflow</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-documentation-workflow.html">Documentation Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-drafting-process.html">Drafting Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/human-validation-process.html">Human Validation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prompt Library</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="technical-drafting-prompts.html">Technical Drafting Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="content-review-prompts.html">Content Review Prompts</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Release Notes Prompts</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-purpose">1. Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-new-feature-release-notes">2. New Feature Release Notes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-bug-fix-release-notes">3. Bug Fix Release Notes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-enhancement-release-notes">4. Enhancement Release Notes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-release-notes-from-a-change-log">5. Release Notes from a Change Log</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-release-notes-editorial-review">6. Release Notes Editorial Review</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-release-notes-quality-checklist">7. Release Notes Quality Checklist</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-responsible-use">8. Responsible Use</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/ai-review-checklist.html">AI Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/documentation-audit.html">Documentation Audit</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Release Notes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../07-release-notes/release-notes-v1.1.html">Version 1.1</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Training</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../08-training/instructional-video-script.html">Instructional Video Script</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evidence</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-source-analysis.html">Source Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-ai-draft-v1.html">Original AI Draft</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-review-record.html">Review Record</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/project-validation-record.html">Project Validation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">AI-Assisted Technical Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Prompt Library</li>
+      <li class="breadcrumb-item active">Release Notes Prompts</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ai-assisted-release-notes-prompts">AI-Assisted Release Notes Prompts</h1>
+<p><strong>Project:</strong> Nexus IT Operations Platform<br />
+<strong>Document Type:</strong> Reusable Prompt Collection<br />
+<strong>Version:</strong> 1.0<br />
+<strong>Date:</strong> November 17, 2026</p>
+<hr />
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This document provides reusable prompts for preparing and reviewing software release notes with AI assistance.</p>
+<p>The prompts help transform approved change information into concise, audience-focused release communications.</p>
+<p>AI must not invent features, fixes, enhancements, or release dates.</p>
+<h2 id="2-new-feature-release-notes">2. New Feature Release Notes</h2>
+<p><strong>Use case:</strong> Describe a newly introduced feature.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Act as a technical writer preparing software release notes.</p>
+<p>Product: [Insert product name]</p>
+<p>Release version: [Insert version]</p>
+<p>New feature: [Insert approved feature description]</p>
+<p>Intended audience: [Insert audience]</p>
+<p>Prepare a concise release note explaining:</p>
+<ul>
+<li>What is new.</li>
+<li>What the feature does.</li>
+<li>Who can use it.</li>
+<li>Why it is useful.</li>
+</ul>
+<p>Use only the supplied approved information.</p>
+<p>Do not invent availability dates, technical behaviour, or feature capabilities.</p>
+<p>Return the content in clear, user-focused language.</p>
+</blockquote>
+<p><strong>Expected output:</strong> A concise new-feature announcement.</p>
+<h2 id="3-bug-fix-release-notes">3. Bug Fix Release Notes</h2>
+<p><strong>Use case:</strong> Describe an approved software correction.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Prepare a release note describing the following software correction.</p>
+<p>Product: [Insert product name]</p>
+<p>Release version: [Insert version]</p>
+<p>Issue: [Describe the confirmed issue]</p>
+<p>Correction: [Describe the approved fix]</p>
+<p>User impact: [Describe the confirmed impact]</p>
+<p>Explain what was corrected and how the change affects users.</p>
+<p>Do not claim that additional issues were resolved.</p>
+<p>Do not invent technical root causes or implementation details.</p>
+<p>Return a concise release note.</p>
+</blockquote>
+<p><strong>Expected output:</strong> A clear description of the confirmed correction.</p>
+<h2 id="4-enhancement-release-notes">4. Enhancement Release Notes</h2>
+<p><strong>Use case:</strong> Communicate an improvement to an existing feature.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Draft a release note for the following product enhancement.</p>
+<p>Product: [Insert product name]</p>
+<p>Release version: [Insert version]</p>
+<p>Existing functionality: [Describe the previous behaviour]</p>
+<p>Enhancement: [Describe the approved improvement]</p>
+<p>User benefit: [Describe the confirmed benefit]</p>
+<p>Explain what has changed and why users may find it useful.</p>
+<p>Preserve the distinction between existing functionality and new improvements.</p>
+<p>Do not introduce unsupported claims.</p>
+</blockquote>
+<p><strong>Expected output:</strong> An audience-focused enhancement summary.</p>
+<h2 id="5-release-notes-from-a-change-log">5. Release Notes from a Change Log</h2>
+<p><strong>Use case:</strong> Convert an approved change log into release notes.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Convert the following approved change log into structured software release notes.</p>
+<p>Product: [Insert product name]</p>
+<p>Release version: [Insert version]</p>
+<p>Intended audience: [Insert audience]</p>
+<p>Organize the changes into:</p>
+<ul>
+<li>New Features</li>
+<li>Enhancements</li>
+<li>Bug Fixes</li>
+<li>Known Issues</li>
+<li>Important Notes</li>
+</ul>
+<p>Include only categories supported by the supplied information.</p>
+<p>Use clear, concise language.</p>
+<p>Do not invent changes or imply that an issue has been fixed unless the source confirms it.</p>
+<p>Change log:</p>
+<p>[Paste approved change log here]</p>
+</blockquote>
+<p><strong>Expected output:</strong> A structured release notes draft.</p>
+<h2 id="6-release-notes-editorial-review">6. Release Notes Editorial Review</h2>
+<p><strong>Use case:</strong> Review a release notes draft before publication.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Review the following software release notes.</p>
+<p>Check:</p>
+<ul>
+<li>Accuracy against the supplied change information.</li>
+<li>Clarity and readability.</li>
+<li>Consistent product terminology.</li>
+<li>Appropriate audience focus.</li>
+<li>Duplicate or unclear statements.</li>
+<li>Unsupported feature or fix claims.</li>
+<li>Version and date information.</li>
+</ul>
+<p>Suggest corrections without changing the technical meaning.</p>
+<p>Identify statements requiring confirmation.</p>
+<p>Draft:</p>
+<p>[Paste release notes here]</p>
+<p>Approved change information:</p>
+<p>[Paste source information here]</p>
+</blockquote>
+<p><strong>Expected output:</strong> An edited release notes draft and a list of review findings.</p>
+<h2 id="7-release-notes-quality-checklist">7. Release Notes Quality Checklist</h2>
+<p>Before publication, confirm:</p>
+<ul>
+<li>[ ] Product name is correct.</li>
+<li>[ ] Release version is confirmed.</li>
+<li>[ ] Release date is approved.</li>
+<li>[ ] New features match approved requirements.</li>
+<li>[ ] Enhancements are accurately described.</li>
+<li>[ ] Bug fixes are confirmed.</li>
+<li>[ ] Known issues are included where applicable.</li>
+<li>[ ] Terminology follows the documentation style guide.</li>
+<li>[ ] Content is appropriate for the intended audience.</li>
+<li>[ ] Required human review is complete.</li>
+</ul>
+<h2 id="8-responsible-use">8. Responsible Use</h2>
+<ul>
+<li>Use approved change records as the source of truth.</li>
+<li>Do not invent release dates or feature availability.</li>
+<li>Do not describe planned features as released features.</li>
+<li>Do not claim an issue has been fixed without confirmation.</li>
+<li>Review all AI-generated release notes before publication.</li>
+</ul>
+<hr />
+<p><strong>Document Status:</strong> Portfolio Demonstration<br />
+<strong>Purpose:</strong> Reusable prompts for AI-assisted software release communication.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="content-review-prompts.html" class="btn btn-neutral float-left" title="Content Review Prompts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../06-quality-assurance/ai-review-checklist.html" class="btn btn-neutral float-right" title="AI Review Checklist">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="content-review-prompts.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../06-quality-assurance/ai-review-checklist.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

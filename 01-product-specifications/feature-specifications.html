@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Dimple Dogra" /><link rel="canonical" href="https://dogra9027-png.github.io/ai-assisted-technical-documentation/01-product-specifications/feature-specifications.html" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Feature Specifications - AI-Assisted Technical Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Feature Specifications";
+        var mkdocs_page_input_path = "01-product-specifications/feature-specifications.md";
+        var mkdocs_page_url = "/ai-assisted-technical-documentation/01-product-specifications/feature-specifications.html";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> AI-Assisted Technical Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project Overview</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="product-overview.html">Product Overview</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Feature Specifications</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#feature-specifications">Feature Specifications</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1-purpose">1. Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-infrastructure-monitoring">2. Infrastructure Monitoring</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-feature-description">2.1 Feature Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-functional-requirements">2.2 Functional Requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-expected-outcome">2.3 Expected Outcome</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-alert-management">3. Alert Management</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-feature-description">3.1 Feature Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-functional-requirements">3.2 Functional Requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-alert-severity">3.3 Alert Severity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#34-alert-status">3.4 Alert Status</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-incident-management">4. Incident Management</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-feature-description">4.1 Feature Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-functional-requirements">4.2 Functional Requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#43-incident-status">4.3 Incident Status</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-dashboards-and-reporting">5. Dashboards and Reporting</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#51-feature-description">5.1 Feature Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#52-functional-requirements">5.2 Functional Requirements</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-user-and-role-management">6. User and Role Management</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-feature-description">6.1 Feature Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#62-functional-requirements">6.2 Functional Requirements</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-role-based-access-control">7. Role-Based Access Control</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-general-requirements">8. General Requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-out-of-scope">9. Out of Scope</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-documentation-dependencies">10. Documentation Dependencies</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-document-control">11. Document Control</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Documentation Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/documentation-style-guide.html">Style Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/terminology-glossary.html">Terminology Glossary</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/getting-started.html">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/installation-guide.html">Installation Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/configuration-guide.html">Configuration Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/troubleshooting-guide.html">Troubleshooting Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/alert-management-guide.html">Alert Management Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI Workflow</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-documentation-workflow.html">Documentation Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-drafting-process.html">Drafting Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/human-validation-process.html">Human Validation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prompt Library</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/technical-drafting-prompts.html">Technical Drafting Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/content-review-prompts.html">Content Review Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/release-notes-prompts.html">Release Notes Prompts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/ai-review-checklist.html">AI Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/documentation-audit.html">Documentation Audit</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Release Notes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../07-release-notes/release-notes-v1.1.html">Version 1.1</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Training</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../08-training/instructional-video-script.html">Instructional Video Script</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evidence</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-source-analysis.html">Source Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-ai-draft-v1.html">Original AI Draft</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-review-record.html">Review Record</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/project-validation-record.html">Project Validation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">AI-Assisted Technical Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Project Overview</li>
+      <li class="breadcrumb-item active">Feature Specifications</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="nexus-it-operations-platform">Nexus IT Operations Platform</h1>
+<h2 id="feature-specifications">Feature Specifications</h2>
+<p><strong>Document Type:</strong> Product Feature Specifications<br />
+<strong>Version:</strong> 1.0<br />
+<strong>Status:</strong> Portfolio Demonstration<br />
+<strong>Related Document:</strong> <a href="product-overview.html">Product Overview</a></p>
+<hr />
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This document defines the functional behaviour, user interactions, permissions, and expected outcomes of the Nexus IT Operations Platform.</p>
+<p>It serves as the reference source for developing user documentation, administrator guides, troubleshooting procedures, and training materials.</p>
+<h2 id="2-infrastructure-monitoring">2. Infrastructure Monitoring</h2>
+<h3 id="21-feature-description">2.1 Feature Description</h3>
+<p>The platform provides a centralized view of monitored infrastructure components and their current health status.</p>
+<h3 id="22-functional-requirements">2.2 Functional Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Requirement</th>
+<th>Expected Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INF-001</td>
+<td>View infrastructure</td>
+<td>Authorized users can access the infrastructure dashboard.</td>
+</tr>
+<tr>
+<td>INF-002</td>
+<td>View server status</td>
+<td>Users can view the availability status of monitored servers.</td>
+</tr>
+<tr>
+<td>INF-003</td>
+<td>View resource utilization</td>
+<td>Users can view CPU, memory, and storage utilization.</td>
+</tr>
+<tr>
+<td>INF-004</td>
+<td>Identify unhealthy components</td>
+<td>The dashboard identifies components requiring attention.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23-expected-outcome">2.3 Expected Outcome</h3>
+<p>Users can identify infrastructure components that may require investigation.</p>
+<h2 id="3-alert-management">3. Alert Management</h2>
+<h3 id="31-feature-description">3.1 Feature Description</h3>
+<p>The alert management module displays notifications generated when monitored conditions require attention.</p>
+<h3 id="32-functional-requirements">3.2 Functional Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Requirement</th>
+<th>Expected Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ALT-001</td>
+<td>View alerts</td>
+<td>Authorized users can access the alert list.</td>
+</tr>
+<tr>
+<td>ALT-002</td>
+<td>View alert details</td>
+<td>Users can review alert descriptions, severity, and status.</td>
+</tr>
+<tr>
+<td>ALT-003</td>
+<td>Filter alerts</td>
+<td>Users can filter alerts by severity and status.</td>
+</tr>
+<tr>
+<td>ALT-004</td>
+<td>Acknowledge alerts</td>
+<td>Authorized users can mark an alert as acknowledged.</td>
+</tr>
+<tr>
+<td>ALT-005</td>
+<td>Track alert status</td>
+<td>Users can distinguish active, acknowledged, and resolved alerts.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-alert-severity">3.3 Alert Severity</h3>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical</td>
+<td>Requires immediate investigation.</td>
+</tr>
+<tr>
+<td>High</td>
+<td>Indicates a significant operational concern.</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>Requires investigation and monitoring.</td>
+</tr>
+<tr>
+<td>Low</td>
+<td>Informational or lower-priority condition.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="34-alert-status">3.4 Alert Status</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active</td>
+<td>Alert has been generated and requires review.</td>
+</tr>
+<tr>
+<td>Acknowledged</td>
+<td>An authorized user has reviewed the alert.</td>
+</tr>
+<tr>
+<td>Resolved</td>
+<td>The underlying condition has been addressed.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-incident-management">4. Incident Management</h2>
+<h3 id="41-feature-description">4.1 Feature Description</h3>
+<p>The incident management module allows operations teams to record, assign, monitor, and resolve operational issues.</p>
+<h3 id="42-functional-requirements">4.2 Functional Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Requirement</th>
+<th>Expected Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INC-001</td>
+<td>Create incidents</td>
+<td>Authorized users can record a new incident.</td>
+</tr>
+<tr>
+<td>INC-002</td>
+<td>Assign incidents</td>
+<td>Incidents can be assigned to an operations team member.</td>
+</tr>
+<tr>
+<td>INC-003</td>
+<td>Set priority</td>
+<td>Users can classify incidents by priority.</td>
+</tr>
+<tr>
+<td>INC-004</td>
+<td>Update status</td>
+<td>Authorized users can update incident status.</td>
+</tr>
+<tr>
+<td>INC-005</td>
+<td>Record resolution</td>
+<td>Users can add resolution notes when closing an incident.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="43-incident-status">4.3 Incident Status</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open</td>
+<td>Incident has been created and requires investigation.</td>
+</tr>
+<tr>
+<td>In Progress</td>
+<td>Investigation or remediation is underway.</td>
+</tr>
+<tr>
+<td>Resolved</td>
+<td>The incident has been addressed.</td>
+</tr>
+<tr>
+<td>Closed</td>
+<td>The incident has been reviewed and formally closed.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-dashboards-and-reporting">5. Dashboards and Reporting</h2>
+<h3 id="51-feature-description">5.1 Feature Description</h3>
+<p>The dashboard provides a consolidated view of infrastructure health and operational activity.</p>
+<h3 id="52-functional-requirements">5.2 Functional Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Requirement</th>
+<th>Expected Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REP-001</td>
+<td>View dashboard</td>
+<td>Authorized users can access the operational dashboard.</td>
+</tr>
+<tr>
+<td>REP-002</td>
+<td>View infrastructure summary</td>
+<td>Dashboard displays infrastructure health information.</td>
+</tr>
+<tr>
+<td>REP-003</td>
+<td>View alert trends</td>
+<td>Users can review alert activity and severity trends.</td>
+</tr>
+<tr>
+<td>REP-004</td>
+<td>View incident summary</td>
+<td>Users can review incident counts and statuses.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-user-and-role-management">6. User and Role Management</h2>
+<h3 id="61-feature-description">6.1 Feature Description</h3>
+<p>Administrators manage platform accounts and assign permissions according to organizational responsibilities.</p>
+<h3 id="62-functional-requirements">6.2 Functional Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Requirement</th>
+<th>Expected Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IAM-001</td>
+<td>Create accounts</td>
+<td>Administrators can create user accounts.</td>
+</tr>
+<tr>
+<td>IAM-002</td>
+<td>Assign roles</td>
+<td>Administrators can assign Administrator, Operations Analyst, or Viewer roles.</td>
+</tr>
+<tr>
+<td>IAM-003</td>
+<td>Update permissions</td>
+<td>Administrators can modify user access.</td>
+</tr>
+<tr>
+<td>IAM-004</td>
+<td>Deactivate accounts</td>
+<td>Administrators can deactivate user accounts.</td>
+</tr>
+<tr>
+<td>IAM-005</td>
+<td>Restrict access</td>
+<td>Users can access only features permitted by their assigned roles.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-role-based-access-control">7. Role-Based Access Control</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Administrator</th>
+<th>Operations Analyst</th>
+<th>Viewer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View infrastructure</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>View alerts</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Acknowledge alerts</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Create incidents</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Assign incidents</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Update incident status</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>View reports</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Manage users</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Configure monitoring</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-general-requirements">8. General Requirements</h2>
+<ul>
+<li>Platform access requires user authentication.</li>
+<li>Features must respect assigned user permissions.</li>
+<li>User-facing information must be presented clearly.</li>
+<li>Operational status and severity labels must use consistent terminology.</li>
+<li>Restricted actions must not be available to unauthorized roles.</li>
+</ul>
+<h2 id="9-out-of-scope">9. Out of Scope</h2>
+<p>The following capabilities are not defined as part of this portfolio demonstration:</p>
+<ul>
+<li>Actual server monitoring integrations</li>
+<li>Automated infrastructure remediation</li>
+<li>Third-party ticketing integrations</li>
+<li>Mobile application support</li>
+<li>Production authentication infrastructure</li>
+<li>Real-time monitoring implementation</li>
+</ul>
+<h2 id="10-documentation-dependencies">10. Documentation Dependencies</h2>
+<p>The following documents will be developed using these specifications:</p>
+<ul>
+<li>Getting Started Guide</li>
+<li>Alert Management Guide</li>
+<li>Incident Management Guide</li>
+<li>Administrator Guide</li>
+<li>Configuration Guide</li>
+<li>Troubleshooting Guide</li>
+<li>Instructional Training Materials</li>
+</ul>
+<h2 id="11-document-control">11. Document Control</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>November 16, 2026</td>
+<td>Initial feature specifications</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Portfolio note:</strong> Nexus IT Operations Platform is fictional. These specifications describe proposed illustrative product behaviour and are not evidence of a functioning commercial application.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="product-overview.html" class="btn btn-neutral float-left" title="Product Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../02-style-guide/documentation-style-guide.html" class="btn btn-neutral float-right" title="Style Guide">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="product-overview.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../02-style-guide/documentation-style-guide.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

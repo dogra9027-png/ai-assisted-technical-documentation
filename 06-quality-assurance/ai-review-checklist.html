@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Dimple Dogra" /><link rel="canonical" href="https://dogra9027-png.github.io/ai-assisted-technical-documentation/06-quality-assurance/ai-review-checklist.html" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>AI Review Checklist - AI-Assisted Technical Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "AI Review Checklist";
+        var mkdocs_page_input_path = "06-quality-assurance/ai-review-checklist.md";
+        var mkdocs_page_url = "/ai-assisted-technical-documentation/06-quality-assurance/ai-review-checklist.html";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> AI-Assisted Technical Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/product-overview.html">Product Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/feature-specifications.html">Feature Specifications</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Documentation Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/documentation-style-guide.html">Style Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/terminology-glossary.html">Terminology Glossary</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/getting-started.html">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/installation-guide.html">Installation Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/configuration-guide.html">Configuration Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/troubleshooting-guide.html">Troubleshooting Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/alert-management-guide.html">Alert Management Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI Workflow</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-documentation-workflow.html">Documentation Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-drafting-process.html">Drafting Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/human-validation-process.html">Human Validation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prompt Library</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/technical-drafting-prompts.html">Technical Drafting Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/content-review-prompts.html">Content Review Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/release-notes-prompts.html">Release Notes Prompts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">AI Review Checklist</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-purpose">1. Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-source-and-requirements-review">2. Source and Requirements Review</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-technical-accuracy">3. Technical Accuracy</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-content-quality">4. Content Quality</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-consistency-review">5. Consistency Review</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-ai-specific-review">6. AI-Specific Review</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-accessibility-and-usability">7. Accessibility and Usability</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-final-review-and-approval">8. Final Review and Approval</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-review-outcome">9. Review Outcome</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="documentation-audit.html">Documentation Audit</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Release Notes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../07-release-notes/release-notes-v1.1.html">Version 1.1</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Training</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../08-training/instructional-video-script.html">Instructional Video Script</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evidence</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-source-analysis.html">Source Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-ai-draft-v1.html">Original AI Draft</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-review-record.html">Review Record</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/project-validation-record.html">Project Validation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">AI-Assisted Technical Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Quality Assurance</li>
+      <li class="breadcrumb-item active">AI Review Checklist</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ai-assisted-documentation-review-checklist">AI-Assisted Documentation Review Checklist</h1>
+<p><strong>Project:</strong> Nexus IT Operations Platform<br />
+<strong>Document Type:</strong> Quality Assurance Checklist<br />
+<strong>Version:</strong> 1.0<br />
+<strong>Status:</strong> Portfolio Demonstration</p>
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This checklist provides a structured method for reviewing AI-assisted technical documentation before approval or publication.</p>
+<p>It focuses on source accuracy, technical correctness, usability, consistency, and responsible AI use.</p>
+<h2 id="2-source-and-requirements-review">2. Source and Requirements Review</h2>
+<ul>
+<li>[ ] Confirm that the correct source documents were used.</li>
+<li>[ ] Identify the applicable functional requirements.</li>
+<li>[ ] Check that documented features are supported by approved sources.</li>
+<li>[ ] Identify conflicting or incomplete requirements.</li>
+<li>[ ] Record assumptions and unresolved questions.</li>
+<li>[ ] Confirm that unsupported behaviour has not been presented as fact.</li>
+</ul>
+<h2 id="3-technical-accuracy">3. Technical Accuracy</h2>
+<ul>
+<li>[ ] Verify technical terminology against approved references.</li>
+<li>[ ] Check product names and feature descriptions.</li>
+<li>[ ] Confirm role permissions and access restrictions.</li>
+<li>[ ] Validate commands, configuration examples, and procedures where applicable.</li>
+<li>[ ] Remove invented interface labels or behaviours.</li>
+<li>[ ] Clearly identify conceptual examples that have not been tested.</li>
+</ul>
+<h2 id="4-content-quality">4. Content Quality</h2>
+<ul>
+<li>[ ] Confirm that the document addresses its intended audience.</li>
+<li>[ ] Use clear and direct language.</li>
+<li>[ ] Prefer active voice.</li>
+<li>[ ] Organize content with logical headings.</li>
+<li>[ ] Use tables and lists where they improve readability.</li>
+<li>[ ] Explain technical terms when necessary.</li>
+<li>[ ] Remove unnecessary repetition.</li>
+</ul>
+<h2 id="5-consistency-review">5. Consistency Review</h2>
+<ul>
+<li>[ ] Follow the documentation style guide.</li>
+<li>[ ] Use approved terminology consistently.</li>
+<li>[ ] Maintain consistent capitalization.</li>
+<li>[ ] Check heading hierarchy.</li>
+<li>[ ] Confirm that related documents use consistent product terminology.</li>
+<li>[ ] Check internal links.</li>
+</ul>
+<h2 id="6-ai-specific-review">6. AI-Specific Review</h2>
+<ul>
+<li>[ ] Identify content that requires human verification.</li>
+<li>[ ] Check for unsupported AI-generated claims.</li>
+<li>[ ] Review generated examples for accuracy.</li>
+<li>[ ] Remove misleading or fabricated details.</li>
+<li>[ ] Confirm that confidential or unauthorized information was not entered into AI tools.</li>
+<li>[ ] Retain a record of material human edits where appropriate.</li>
+</ul>
+<h2 id="7-accessibility-and-usability">7. Accessibility and Usability</h2>
+<ul>
+<li>[ ] Use meaningful link text.</li>
+<li>[ ] Provide descriptive headings.</li>
+<li>[ ] Avoid relying on colour alone to communicate meaning.</li>
+<li>[ ] Use clear table headers.</li>
+<li>[ ] Write instructions in a logical sequence.</li>
+<li>[ ] Ensure that warnings and important notes are easy to identify.</li>
+</ul>
+<h2 id="8-final-review-and-approval">8. Final Review and Approval</h2>
+<ul>
+<li>[ ] Complete editorial review.</li>
+<li>[ ] Complete technical review.</li>
+<li>[ ] Resolve or document outstanding questions.</li>
+<li>[ ] Confirm document status and version.</li>
+<li>[ ] Obtain required stakeholder approval.</li>
+<li>[ ] Confirm publication readiness.</li>
+</ul>
+<h2 id="9-review-outcome">9. Review Outcome</h2>
+<p>Record one of the following outcomes:</p>
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Approved</td>
+<td>Reviewed and approved for publication.</td>
+</tr>
+<tr>
+<td>Approved with conditions</td>
+<td>May proceed subject to documented conditions.</td>
+</tr>
+<tr>
+<td>Revision required</td>
+<td>Changes are required before approval.</td>
+</tr>
+<tr>
+<td>Pending validation</td>
+<td>Additional technical or stakeholder confirmation is needed.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Portfolio note:</strong> This checklist demonstrates a proposed quality-assurance process. Its use does not imply that fictional Nexus documentation has undergone real product testing or stakeholder approval.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../05-prompt-library/release-notes-prompts.html" class="btn btn-neutral float-left" title="Release Notes Prompts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="documentation-audit.html" class="btn btn-neutral float-right" title="Documentation Audit">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../05-prompt-library/release-notes-prompts.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="documentation-audit.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

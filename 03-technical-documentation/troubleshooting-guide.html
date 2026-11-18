@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Dimple Dogra" /><link rel="canonical" href="https://dogra9027-png.github.io/ai-assisted-technical-documentation/03-technical-documentation/troubleshooting-guide.html" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Troubleshooting Guide - AI-Assisted Technical Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Troubleshooting Guide";
+        var mkdocs_page_input_path = "03-technical-documentation/troubleshooting-guide.md";
+        var mkdocs_page_url = "/ai-assisted-technical-documentation/03-technical-documentation/troubleshooting-guide.html";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> AI-Assisted Technical Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/product-overview.html">Product Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/feature-specifications.html">Feature Specifications</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Documentation Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/documentation-style-guide.html">Style Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/terminology-glossary.html">Terminology Glossary</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation-guide.html">Installation Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="configuration-guide.html">Configuration Guide</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Troubleshooting Guide</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#troubleshooting-guide">Troubleshooting Guide</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1-purpose">1. Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-before-you-begin">2. Before You Begin</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-sign-in-issues">3. Sign-In Issues</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#symptom">Symptom</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#possible-causes">Possible Causes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recommended-actions">Recommended Actions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#escalation-information">Escalation Information</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-missing-dashboard-information">4. Missing Dashboard Information</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#symptom_1">Symptom</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#possible-causes_1">Possible Causes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recommended-actions_1">Recommended Actions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-alerts-are-not-displaying-as-expected">5. Alerts Are Not Displaying as Expected</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#symptom_2">Symptom</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#possible-causes_2">Possible Causes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recommended-actions_2">Recommended Actions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-user-cannot-perform-an-action">6. User Cannot Perform an Action</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#symptom_3">Symptom</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#possible-causes_3">Possible Causes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recommended-actions_3">Recommended Actions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-incident-status-cannot-be-updated">7. Incident Status Cannot Be Updated</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#symptom_4">Symptom</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#possible-causes_4">Possible Causes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recommended-actions_4">Recommended Actions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-reports-do-not-display-expected-results">8. Reports Do Not Display Expected Results</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#symptom_5">Symptom</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#possible-causes_5">Possible Causes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recommended-actions_5">Recommended Actions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-general-troubleshooting-checklist">9. General Troubleshooting Checklist</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-when-to-escalate">10. When to Escalate</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-related-documentation">11. Related Documentation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-document-control">12. Document Control</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="alert-management-guide.html">Alert Management Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI Workflow</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-documentation-workflow.html">Documentation Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-drafting-process.html">Drafting Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/human-validation-process.html">Human Validation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prompt Library</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/technical-drafting-prompts.html">Technical Drafting Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/content-review-prompts.html">Content Review Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/release-notes-prompts.html">Release Notes Prompts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/ai-review-checklist.html">AI Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/documentation-audit.html">Documentation Audit</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Release Notes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../07-release-notes/release-notes-v1.1.html">Version 1.1</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Training</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../08-training/instructional-video-script.html">Instructional Video Script</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evidence</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-source-analysis.html">Source Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-ai-draft-v1.html">Original AI Draft</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-review-record.html">Review Record</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/project-validation-record.html">Project Validation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">AI-Assisted Technical Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Technical Documentation</li>
+      <li class="breadcrumb-item active">Troubleshooting Guide</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="nexus-it-operations-platform">Nexus IT Operations Platform</h1>
+<h2 id="troubleshooting-guide">Troubleshooting Guide</h2>
+<p><strong>Document Type:</strong> Support Guide<br />
+<strong>Version:</strong> 1.0<br />
+<strong>Audience:</strong> IT Operations Analysts, System Administrators, and Support Teams<br />
+<strong>Status:</strong> Portfolio Demonstration</p>
+<hr />
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This guide provides structured troubleshooting guidance for common issues that users may encounter when working with the Nexus IT Operations Platform.</p>
+<p>Each troubleshooting topic includes symptoms, possible causes, recommended actions, and escalation guidance.</p>
+<p><strong>Important:</strong> Nexus is a fictional product developed for this portfolio. The scenarios are illustrative and have not been tested against a live application.</p>
+<h2 id="2-before-you-begin">2. Before You Begin</h2>
+<p>Before troubleshooting an issue:</p>
+<ul>
+<li>Identify the affected user or system component.</li>
+<li>Record the error message, if available.</li>
+<li>Note when the issue occurred.</li>
+<li>Determine whether the issue affects one user or multiple users.</li>
+<li>Review any recent configuration or access changes.</li>
+</ul>
+<p>Do not make unapproved configuration changes while investigating an issue.</p>
+<h2 id="3-sign-in-issues">3. Sign-In Issues</h2>
+<h3 id="symptom">Symptom</h3>
+<p>A user cannot access the Nexus platform.</p>
+<h3 id="possible-causes">Possible Causes</h3>
+<ul>
+<li>Incorrect sign-in credentials.</li>
+<li>User account is inactive.</li>
+<li>User account does not have the required access.</li>
+<li>Authentication service is unavailable.</li>
+</ul>
+<h3 id="recommended-actions">Recommended Actions</h3>
+<ol>
+<li>Confirm that the user is accessing the correct platform.</li>
+<li>Ask the user to verify their credentials.</li>
+<li>Check whether the account is active.</li>
+<li>Review the user's assigned role and access permissions.</li>
+<li>If the issue continues, escalate it to the responsible administrator or support team.</li>
+</ol>
+<h3 id="escalation-information">Escalation Information</h3>
+<p>Record the affected username, time of occurrence, error message, and troubleshooting steps already completed.</p>
+<h2 id="4-missing-dashboard-information">4. Missing Dashboard Information</h2>
+<h3 id="symptom_1">Symptom</h3>
+<p>A dashboard does not display expected monitoring information.</p>
+<h3 id="possible-causes_1">Possible Causes</h3>
+<ul>
+<li>No monitoring data is available.</li>
+<li>The selected dashboard filters exclude the expected information.</li>
+<li>The user does not have permission to view the relevant data.</li>
+<li>The monitored component is unavailable.</li>
+</ul>
+<h3 id="recommended-actions_1">Recommended Actions</h3>
+<ol>
+<li>Review the selected dashboard filters.</li>
+<li>Confirm that the user has the required viewing permissions.</li>
+<li>Check the reported health status of the relevant infrastructure component.</li>
+<li>Determine whether the issue affects other dashboards or users.</li>
+<li>Record the findings and escalate unresolved issues.</li>
+</ol>
+<h2 id="5-alerts-are-not-displaying-as-expected">5. Alerts Are Not Displaying as Expected</h2>
+<h3 id="symptom_2">Symptom</h3>
+<p>An expected alert is missing, or an alert does not appear with the expected severity.</p>
+<h3 id="possible-causes_2">Possible Causes</h3>
+<ul>
+<li>The underlying monitoring condition has not been detected.</li>
+<li>Monitoring configuration does not include the affected component.</li>
+<li>The alert is filtered from the current view.</li>
+<li>The alert severity classification differs from the expected classification.</li>
+</ul>
+<h3 id="recommended-actions_2">Recommended Actions</h3>
+<ol>
+<li>Open the alert management area.</li>
+<li>Review active filters.</li>
+<li>Confirm that the relevant infrastructure component is included in monitoring.</li>
+<li>Review the alert details and severity.</li>
+<li>Compare the configuration with approved monitoring requirements.</li>
+<li>Escalate if the expected alert remains unavailable.</li>
+</ol>
+<p><strong>Note:</strong> Do not change alert thresholds without authorization.</p>
+<h2 id="6-user-cannot-perform-an-action">6. User Cannot Perform an Action</h2>
+<h3 id="symptom_3">Symptom</h3>
+<p>A user can access the platform but cannot perform a specific operation.</p>
+<h3 id="possible-causes_3">Possible Causes</h3>
+<ul>
+<li>The assigned role does not permit the action.</li>
+<li>The user's permissions have changed.</li>
+<li>The requested action requires administrator access.</li>
+</ul>
+<h3 id="recommended-actions_3">Recommended Actions</h3>
+<ol>
+<li>Identify the action the user is attempting to perform.</li>
+<li>Review the user's assigned role.</li>
+<li>Compare the role permissions with the required action.</li>
+<li>Confirm whether the user should have additional access.</li>
+<li>Request an authorized administrator to make any required changes.</li>
+</ol>
+<p>Do not grant elevated permissions solely to bypass an access issue.</p>
+<h2 id="7-incident-status-cannot-be-updated">7. Incident Status Cannot Be Updated</h2>
+<h3 id="symptom_4">Symptom</h3>
+<p>A user cannot update an incident's status.</p>
+<h3 id="possible-causes_4">Possible Causes</h3>
+<ul>
+<li>The user does not have incident-management permissions.</li>
+<li>The incident is not available in the current view.</li>
+<li>The requested status change is not supported by the defined workflow.</li>
+</ul>
+<h3 id="recommended-actions_4">Recommended Actions</h3>
+<ol>
+<li>Confirm that the incident exists.</li>
+<li>Review the user's assigned role.</li>
+<li>Check the current incident status.</li>
+<li>Confirm that the requested status is one of the supported values.</li>
+<li>Escalate the issue if the user has the correct permissions but cannot complete the action.</li>
+</ol>
+<p>Supported incident statuses:</p>
+<ul>
+<li>Open</li>
+<li>In Progress</li>
+<li>Resolved</li>
+<li>Closed</li>
+</ul>
+<h2 id="8-reports-do-not-display-expected-results">8. Reports Do Not Display Expected Results</h2>
+<h3 id="symptom_5">Symptom</h3>
+<p>A report is missing expected information or displays unexpected results.</p>
+<h3 id="possible-causes_5">Possible Causes</h3>
+<ul>
+<li>Incorrect report filters.</li>
+<li>Incorrect reporting period.</li>
+<li>Insufficient data availability.</li>
+<li>User access restrictions.</li>
+</ul>
+<h3 id="recommended-actions_5">Recommended Actions</h3>
+<ol>
+<li>Review the selected reporting period.</li>
+<li>Check the applied filters.</li>
+<li>Confirm that the user has permission to view the report.</li>
+<li>Compare the report with the relevant dashboard information, where applicable.</li>
+<li>Record any differences and escalate unresolved discrepancies.</li>
+</ol>
+<h2 id="9-general-troubleshooting-checklist">9. General Troubleshooting Checklist</h2>
+<p>Use this checklist when investigating an issue.</p>
+<ul>
+<li>[ ] Record the issue and its impact.</li>
+<li>[ ] Capture the exact error message, if available.</li>
+<li>[ ] Identify affected users or components.</li>
+<li>[ ] Review relevant access permissions.</li>
+<li>[ ] Check applicable configuration settings.</li>
+<li>[ ] Document troubleshooting steps.</li>
+<li>[ ] Confirm whether the issue is resolved.</li>
+<li>[ ] Escalate unresolved issues.</li>
+</ul>
+<h2 id="10-when-to-escalate">10. When to Escalate</h2>
+<p>Escalate an issue when:</p>
+<ul>
+<li>The issue affects multiple users or critical operations.</li>
+<li>The problem cannot be resolved using approved procedures.</li>
+<li>A security or access-control concern is identified.</li>
+<li>The issue appears to involve an underlying platform or infrastructure failure.</li>
+<li>The investigation requires changes outside the user's authorization.</li>
+</ul>
+<p>Include the following information when escalating:</p>
+<table>
+<thead>
+<tr>
+<th>Information</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Issue summary</td>
+<td>Brief description of the problem</td>
+</tr>
+<tr>
+<td>Affected area</td>
+<td>Dashboard, alerts, incidents, access, or reporting</td>
+</tr>
+<tr>
+<td>Impact</td>
+<td>Users or operations affected</td>
+</tr>
+<tr>
+<td>Time reported</td>
+<td>Date and time the issue occurred</td>
+</tr>
+<tr>
+<td>Error details</td>
+<td>Exact error message, if available</td>
+</tr>
+<tr>
+<td>Actions taken</td>
+<td>Troubleshooting steps completed</td>
+</tr>
+<tr>
+<td>Current status</td>
+<td>Resolved, unresolved, or under investigation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="11-related-documentation">11. Related Documentation</h2>
+<ul>
+<li><a href="../01-product-specifications/product-overview.html">Product Overview</a></li>
+<li><a href="../01-product-specifications/feature-specifications.html">Feature Specifications</a></li>
+<li><a href="getting-started.html">Getting Started Guide</a></li>
+<li><a href="installation-guide.html">Installation Guide</a></li>
+<li><a href="configuration-guide.html">Configuration Guide</a></li>
+<li><a href="../02-style-guide/terminology-glossary.html">Terminology Glossary</a></li>
+</ul>
+<h2 id="12-document-control">12. Document Control</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>November 16, 2026</td>
+<td>Initial troubleshooting guide</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>This guide is an illustrative support document for a fictional software product. Troubleshooting scenarios and resolution steps have not been validated against a live application.</em></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="configuration-guide.html" class="btn btn-neutral float-left" title="Configuration Guide"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="alert-management-guide.html" class="btn btn-neutral float-right" title="Alert Management Guide">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="configuration-guide.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="alert-management-guide.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

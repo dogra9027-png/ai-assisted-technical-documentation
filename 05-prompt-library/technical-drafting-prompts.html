@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Dimple Dogra" /><link rel="canonical" href="https://dogra9027-png.github.io/ai-assisted-technical-documentation/05-prompt-library/technical-drafting-prompts.html" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Technical Drafting Prompts - AI-Assisted Technical Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Technical Drafting Prompts";
+        var mkdocs_page_input_path = "05-prompt-library/technical-drafting-prompts.md";
+        var mkdocs_page_url = "/ai-assisted-technical-documentation/05-prompt-library/technical-drafting-prompts.html";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> AI-Assisted Technical Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/product-overview.html">Product Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/feature-specifications.html">Feature Specifications</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Documentation Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/documentation-style-guide.html">Style Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/terminology-glossary.html">Terminology Glossary</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/getting-started.html">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/installation-guide.html">Installation Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/configuration-guide.html">Configuration Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/troubleshooting-guide.html">Troubleshooting Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/alert-management-guide.html">Alert Management Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI Workflow</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-documentation-workflow.html">Documentation Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-drafting-process.html">Drafting Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/human-validation-process.html">Human Validation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prompt Library</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Technical Drafting Prompts</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-purpose">1. Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-product-context-prompt">2. Product Context Prompt</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-document-outline-prompt">3. Document Outline Prompt</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-user-guide-drafting-prompt">4. User Guide Drafting Prompt</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-administrator-guide-prompt">5. Administrator Guide Prompt</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-troubleshooting-guide-prompt">6. Troubleshooting Guide Prompt</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-technical-content-simplification-prompt">7. Technical Content Simplification Prompt</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-documentation-gap-analysis-prompt">8. Documentation Gap Analysis Prompt</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-prompt-adapt">9. Prompt Adapt</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="content-review-prompts.html">Content Review Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="release-notes-prompts.html">Release Notes Prompts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/ai-review-checklist.html">AI Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/documentation-audit.html">Documentation Audit</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Release Notes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../07-release-notes/release-notes-v1.1.html">Version 1.1</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Training</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../08-training/instructional-video-script.html">Instructional Video Script</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evidence</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-source-analysis.html">Source Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-ai-draft-v1.html">Original AI Draft</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-review-record.html">Review Record</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/project-validation-record.html">Project Validation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">AI-Assisted Technical Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Prompt Library</li>
+      <li class="breadcrumb-item active">Technical Drafting Prompts</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="technical-documentation-prompt-library">Technical Documentation Prompt Library</h1>
+<p><strong>Project:</strong> Nexus IT Operations Platform<br />
+<strong>Document Type:</strong> Reusable Prompt Collection<br />
+<strong>Version:</strong> 1.0<br />
+<strong>Date:</strong> November 16, 2026</p>
+<hr />
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This prompt library provides reusable prompt templates for developing technical documentation with generative AI assistance.</p>
+<p>Each prompt is designed to support a specific documentation task while maintaining control over source information, audience, structure, and output quality.</p>
+<p>The templates can be adapted for different products and documentation environments.</p>
+<h2 id="2-product-context-prompt">2. Product Context Prompt</h2>
+<p><strong>Use case:</strong> Establish product context before generating documentation.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Act as a technical writer supporting an enterprise software documentation project.</p>
+<p>I will provide product specifications, feature descriptions, and approved terminology.</p>
+<p>Use only the information supplied in the source material.</p>
+<p>Do not invent product functionality, technical requirements, configuration values, or system behaviours.</p>
+<p>If information is missing, identify it as an open question.</p>
+<p>Confirm your understanding of the product, intended audience, and available source information before drafting.</p>
+</blockquote>
+<p><strong>Expected output:</strong> A concise summary of the product, audience, available information, and information gaps.</p>
+<h2 id="3-document-outline-prompt">3. Document Outline Prompt</h2>
+<p><strong>Use case:</strong> Create a structured outline for a technical document.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Develop a documentation outline for the following document:</p>
+<ul>
+<li>Document type: [Insert document type]</li>
+<li>Product: [Insert product name]</li>
+<li>Audience: [Insert intended audience]</li>
+<li>Purpose: [Describe the document's purpose]</li>
+<li>Source material: [Insert approved references]</li>
+</ul>
+<p>Organize the outline into logical sections.</p>
+<p>Include prerequisites, procedures, expected outcomes, warnings, and related documentation where relevant.</p>
+<p>Avoid adding sections that require unsupported product functionality.</p>
+<p>Return the proposed outline with a brief explanation of the purpose of each section.</p>
+</blockquote>
+<p><strong>Expected output:</strong> A structured document outline ready for technical writer review.</p>
+<h2 id="4-user-guide-drafting-prompt">4. User Guide Drafting Prompt</h2>
+<p><strong>Use case:</strong> Develop end-user instructions.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Draft a user guide for [Insert product or feature].</p>
+<p>Audience: [Insert user audience]</p>
+<p>Purpose: Help users understand and complete [Insert task].</p>
+<p>Use the supplied product information as the only source of product-specific facts.</p>
+<p>Write in clear, direct language using active voice.</p>
+<p>Organize procedures into numbered steps.</p>
+<p>Include prerequisites, important notes, expected results, and troubleshooting guidance where supported.</p>
+<p>Do not invent interface labels or product behaviour.</p>
+<p>Identify any missing information that requires confirmation.</p>
+</blockquote>
+<p><strong>Expected output:</strong> An audience-focused user guide draft.</p>
+<h2 id="5-administrator-guide-prompt">5. Administrator Guide Prompt</h2>
+<p><strong>Use case:</strong> Develop configuration or administration documentation.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Prepare an administrator guide for [Insert feature or configuration area].</p>
+<p>Intended audience: System Administrators.</p>
+<p>Source material: [Insert approved specifications].</p>
+<p>Explain the purpose of each configuration area.</p>
+<p>Include prerequisites, access requirements, configuration considerations, security implications, and verification steps where supported by the source material.</p>
+<p>Use tables where they improve clarity.</p>
+<p>Do not invent commands, ports, default values, server requirements, or configuration options.</p>
+<p>Clearly identify information that requires technical confirmation.</p>
+</blockquote>
+<p><strong>Expected output:</strong> A structured administrator guide draft.</p>
+<h2 id="6-troubleshooting-guide-prompt">6. Troubleshooting Guide Prompt</h2>
+<p><strong>Use case:</strong> Create support-oriented troubleshooting content.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Develop a troubleshooting entry for the following issue:</p>
+<ul>
+<li>Product: [Insert product]</li>
+<li>Issue: [Describe the issue]</li>
+<li>Audience: [Insert audience]</li>
+<li>Available technical information: [Insert source material]</li>
+</ul>
+<p>Organize the entry into:</p>
+<ol>
+<li>Symptom</li>
+<li>Possible causes</li>
+<li>Recommended actions</li>
+<li>Expected outcome</li>
+<li>Escalation information</li>
+</ol>
+<p>Do not present unverified causes as confirmed facts.</p>
+<p>Do not invent error messages or diagnostic commands.</p>
+<p>Identify any additional information required from a subject matter expert.</p>
+</blockquote>
+<p><strong>Expected output:</strong> A structured troubleshooting entry.</p>
+<h2 id="7-technical-content-simplification-prompt">7. Technical Content Simplification Prompt</h2>
+<p><strong>Use case:</strong> Make complex technical information easier to understand.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Rewrite the following technical content for [Insert audience].</p>
+<p>Preserve the technical meaning and all important details.</p>
+<p>Use clear language, shorter sentences, and consistent terminology.</p>
+<p>Explain unfamiliar terms when necessary.</p>
+<p>Do not remove warnings, prerequisites, limitations, or security considerations.</p>
+<p>Do not add technical claims that are not present in the original content.</p>
+<p>After rewriting, list any statements that may require technical clarification.</p>
+<p>Source content:</p>
+<p>[Paste content here]</p>
+</blockquote>
+<p><strong>Expected output:</strong> A clearer version of the original content with a list of possible clarification points.</p>
+<h2 id="8-documentation-gap-analysis-prompt">8. Documentation Gap Analysis Prompt</h2>
+<p><strong>Use case:</strong> Identify missing information before publication.</p>
+<p><strong>Prompt:</strong></p>
+<blockquote>
+<p>Review the following documentation against the supplied product requirements.</p>
+<p>Identify:</p>
+<ul>
+<li>Missing sections.</li>
+<li>Unsupported statements.</li>
+<li>Unclear instructions.</li>
+<li>Missing prerequisites.</li>
+<li>Inconsistent terminology.</li>
+<li>Missing warnings or limitations.</li>
+<li>Incorrect or incomplete references.</li>
+</ul>
+<p>Separate confirmed issues from questions requiring SME confirmation.</p>
+<p>Do not assume that missing information is available elsewhere.</p>
+<p>Return findings in a table with columns for issue, location, impact, and recommended action.</p>
+</blockquote>
+<p><strong>Expected output:</strong> A structured documentation gap analysis.</p>
+<h2 id="9-prompt-adapt">9. Prompt Adapt</h2>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../04-ai-workflow/human-validation-process.html" class="btn btn-neutral float-left" title="Human Validation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="content-review-prompts.html" class="btn btn-neutral float-right" title="Content Review Prompts">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../04-ai-workflow/human-validation-process.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="content-review-prompts.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

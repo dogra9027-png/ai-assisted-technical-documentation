@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Dimple Dogra" /><link rel="canonical" href="https://dogra9027-png.github.io/ai-assisted-technical-documentation/04-ai-workflow/ai-documentation-workflow.html" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Documentation Workflow - AI-Assisted Technical Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Documentation Workflow";
+        var mkdocs_page_input_path = "04-ai-workflow/ai-documentation-workflow.md";
+        var mkdocs_page_url = "/ai-assisted-technical-documentation/04-ai-workflow/ai-documentation-workflow.html";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> AI-Assisted Technical Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/product-overview.html">Product Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/feature-specifications.html">Feature Specifications</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Documentation Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/documentation-style-guide.html">Style Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/terminology-glossary.html">Terminology Glossary</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/getting-started.html">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/installation-guide.html">Installation Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/configuration-guide.html">Configuration Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/troubleshooting-guide.html">Troubleshooting Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-technical-documentation/alert-management-guide.html">Alert Management Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI Workflow</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Documentation Workflow</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-purpose">1. Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-workflow-objectives">2. Workflow Objectives</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-documentation-workflow">3. Documentation Workflow</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#stage-1-gather-source-information">Stage 1: Gather Source Information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stage-2-define-documentation-requirements">Stage 2: Define Documentation Requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stage-3-generate-the-initial-draft">Stage 3: Generate the Initial Draft</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stage-4-review-technical-accuracy">Stage 4: Review Technical Accuracy</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stage-5-perform-editorial-review">Stage 5: Perform Editorial Review</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stage-6-validate-and-approve">Stage 6: Validate and Approve</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stage-7-maintain-documentation">Stage 7: Maintain Documentation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-human-and-ai-responsibilities">4. Human and AI Responsibilities</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-quality-and-risk-controls">5. Quality and Risk Controls</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-documentation-deliverables">6. Documentation Deliverables</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-tools-and-working-methods">7. Tools and Working Methods</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-limitations">8. Limitations</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-related-documents">9. Related Documents</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="ai-drafting-process.html">Drafting Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="human-validation-process.html">Human Validation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prompt Library</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/technical-drafting-prompts.html">Technical Drafting Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/content-review-prompts.html">Content Review Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/release-notes-prompts.html">Release Notes Prompts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/ai-review-checklist.html">AI Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/documentation-audit.html">Documentation Audit</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Release Notes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../07-release-notes/release-notes-v1.1.html">Version 1.1</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Training</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../08-training/instructional-video-script.html">Instructional Video Script</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evidence</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-source-analysis.html">Source Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-ai-draft-v1.html">Original AI Draft</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-review-record.html">Review Record</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/project-validation-record.html">Project Validation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">AI-Assisted Technical Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">AI Workflow</li>
+      <li class="breadcrumb-item active">Documentation Workflow</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ai-assisted-documentation-workflow">AI-Assisted Documentation Workflow</h1>
+<p><strong>Project:</strong> Nexus IT Operations Platform<br />
+<strong>Document Type:</strong> Documentation Process<br />
+<strong>Version:</strong> 1.0<br />
+<strong>Date:</strong> November 16, 2026</p>
+<hr />
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This document describes a structured workflow for using generative AI to support technical documentation development.</p>
+<p>The workflow demonstrates how AI can assist with information analysis, content drafting, document organization, and editorial review while keeping human validation and accountability central to the process.</p>
+<p>The process was developed as part of a portfolio demonstration using the fictional Nexus IT Operations Platform.</p>
+<h2 id="2-workflow-objectives">2. Workflow Objectives</h2>
+<p>The workflow is designed to:</p>
+<ul>
+<li>Reduce the time required to prepare initial documentation drafts.</li>
+<li>Maintain consistent terminology and writing style.</li>
+<li>Organize technical information into user-focused documentation.</li>
+<li>Identify missing information and inconsistencies.</li>
+<li>Support reusable documentation practices.</li>
+<li>Ensure that published content receives human review.</li>
+</ul>
+<p>AI-generated content is treated as draft material, not as an authoritative source.</p>
+<h2 id="3-documentation-workflow">3. Documentation Workflow</h2>
+<p>The process follows seven stages.</p>
+<h3 id="stage-1-gather-source-information">Stage 1: Gather Source Information</h3>
+<p>Collect and review the available product information before drafting.</p>
+<p>Typical inputs include:</p>
+<ul>
+<li>Product overview.</li>
+<li>Feature specifications.</li>
+<li>Functional requirements.</li>
+<li>User roles and permissions.</li>
+<li>Approved terminology.</li>
+<li>Existing documentation standards.</li>
+</ul>
+<p><strong>Human responsibility:</strong> Confirm that the source material is relevant, current, and approved for use.</p>
+<h3 id="stage-2-define-documentation-requirements">Stage 2: Define Documentation Requirements</h3>
+<p>Identify the document's:</p>
+<ul>
+<li>Purpose.</li>
+<li>Intended audience.</li>
+<li>Scope.</li>
+<li>Required topics.</li>
+<li>Dependencies.</li>
+<li>Expected level of technical detail.</li>
+</ul>
+<p><strong>AI assistance:</strong> Organize requirements into an initial outline and identify potential content gaps.</p>
+<p><strong>Human responsibility:</strong> Approve the document structure and intended coverage.</p>
+<h3 id="stage-3-generate-the-initial-draft">Stage 3: Generate the Initial Draft</h3>
+<p>Use structured prompts to prepare an initial draft.</p>
+<p>AI can assist with:</p>
+<ul>
+<li>Organizing information.</li>
+<li>Developing section headings.</li>
+<li>Creating procedural steps.</li>
+<li>Drafting explanations.</li>
+<li>Preparing tables.</li>
+<li>Identifying questions requiring clarification.</li>
+</ul>
+<p><strong>Human responsibility:</strong> Ensure that the draft reflects the approved source information and does not introduce unsupported functionality.</p>
+<h3 id="stage-4-review-technical-accuracy">Stage 4: Review Technical Accuracy</h3>
+<p>Compare the draft against the product specifications and other approved references.</p>
+<p>Review:</p>
+<ul>
+<li>Product terminology.</li>
+<li>Feature descriptions.</li>
+<li>User permissions.</li>
+<li>Workflow sequences.</li>
+<li>Error messages.</li>
+<li>Configuration details.</li>
+<li>Technical assumptions.</li>
+</ul>
+<p><strong>Human responsibility:</strong> Correct inaccuracies, remove unsupported claims, and identify information requiring confirmation from a subject matter expert (SME).</p>
+<h3 id="stage-5-perform-editorial-review">Stage 5: Perform Editorial Review</h3>
+<p>Apply the documentation style guide.</p>
+<p>Check:</p>
+<ul>
+<li>Clarity and readability.</li>
+<li>Active voice.</li>
+<li>Consistent terminology.</li>
+<li>Heading structure.</li>
+<li>Formatting.</li>
+<li>Procedural instructions.</li>
+<li>Accessibility.</li>
+<li>Cross-references.</li>
+</ul>
+<p>AI may assist with editorial suggestions, but a human reviewer makes the final decisions.</p>
+<h3 id="stage-6-validate-and-approve">Stage 6: Validate and Approve</h3>
+<p>Perform a final review before considering a document ready for release.</p>
+<p>Validation includes:</p>
+<ul>
+<li>Checking links and references.</li>
+<li>Confirming consistency with product specifications.</li>
+<li>Reviewing document version information.</li>
+<li>Identifying unresolved questions.</li>
+<li>Recording review outcomes.</li>
+</ul>
+<p>For real products, procedures and technical instructions must also be validated in an appropriate test environment by qualified personnel.</p>
+<h3 id="stage-7-maintain-documentation">Stage 7: Maintain Documentation</h3>
+<p>After approval:</p>
+<ul>
+<li>Update the document version.</li>
+<li>Record changes.</li>
+<li>Review related documents for consistency.</li>
+<li>Retain relevant source and review records.</li>
+<li>Reassess documentation when product requirements change.</li>
+</ul>
+<h2 id="4-human-and-ai-responsibilities">4. Human and AI Responsibilities</h2>
+<table>
+<thead>
+<tr>
+<th>Activity</th>
+<th>AI Contribution</th>
+<th>Human Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source analysis</td>
+<td>Organizes supplied information</td>
+<td>Confirms source authority</td>
+</tr>
+<tr>
+<td>Document planning</td>
+<td>Suggests outlines</td>
+<td>Approves scope and structure</td>
+</tr>
+<tr>
+<td>Drafting</td>
+<td>Produces initial content</td>
+<td>Reviews and edits the draft</td>
+</tr>
+<tr>
+<td>Technical review</td>
+<td>Identifies possible inconsistencies</td>
+<td>Verifies technical accuracy</td>
+</tr>
+<tr>
+<td>Editorial review</td>
+<td>Suggests clarity improvements</td>
+<td>Applies editorial judgment</td>
+</tr>
+<tr>
+<td>Quality assurance</td>
+<td>Assists with checklist-based review</td>
+<td>Completes validation</td>
+</tr>
+<tr>
+<td>Release</td>
+<td>Helps prepare release notes</td>
+<td>Approves and publishes content</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-quality-and-risk-controls">5. Quality and Risk Controls</h2>
+<p>The following controls are used to reduce the risks associated with AI-assisted content creation.</p>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Incorrect technical information</td>
+<td>Verify content against approved specifications</td>
+</tr>
+<tr>
+<td>Invented product functionality</td>
+<td>Remove unsupported claims</td>
+</tr>
+<tr>
+<td>Inconsistent terminology</td>
+<td>Apply the approved glossary</td>
+</tr>
+<tr>
+<td>Unclear procedures</td>
+<td>Review instructions from the user's perspective</td>
+</tr>
+<tr>
+<td>Broken references</td>
+<td>Check internal links before release</td>
+</tr>
+<tr>
+<td>Confidential information exposure</td>
+<td>Use only authorized information in AI tools</td>
+</tr>
+<tr>
+<td>Overreliance on AI output</td>
+<td>Require human review and approval</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-documentation-deliverables">6. Documentation Deliverables</h2>
+<p>The workflow is demonstrated through the following Nexus project documents:</p>
+<ul>
+<li>Product overview and feature specifications.</li>
+<li>Documentation style guide and terminology glossary.</li>
+<li>Getting Started Guide.</li>
+<li>Installation Guide.</li>
+<li>Configuration Guide.</li>
+<li>Troubleshooting Guide.</li>
+<li>Reusable AI prompts.</li>
+<li>Quality assurance checklist.</li>
+<li>Release notes.</li>
+<li>Instructional video script.</li>
+</ul>
+<h2 id="7-tools-and-working-methods">7. Tools and Working Methods</h2>
+<p>The portfolio workflow uses:</p>
+<ul>
+<li>ChatGPT for AI-assisted outlining, drafting, and editorial support.</li>
+<li>Markdown for structured documentation.</li>
+<li>Visual Studio Code for document editing.</li>
+<li>Git and GitHub for version control and project presentation.</li>
+</ul>
+<p>Tool assistance does not replace source verification, technical testing, SME review, or release approval.</p>
+<h2 id="8-limitations">8. Limitations</h2>
+<p>This portfolio demonstrates a documentation development process for a fictional product.</p>
+<p>It does not represent a production documentation pipeline, automated publishing system, or validated software deployment.</p>
+<p>The workflow is intended to demonstrate practical AI-assisted documentation methods and human quality controls.</p>
+<h2 id="9-related-documents">9. Related Documents</h2>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../03-technical-documentation/alert-management-guide.html" class="btn btn-neutral float-left" title="Alert Management Guide"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="ai-drafting-process.html" class="btn btn-neutral float-right" title="Drafting Process">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../03-technical-documentation/alert-management-guide.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="ai-drafting-process.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

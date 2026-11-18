@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Dimple Dogra" /><link rel="canonical" href="https://dogra9027-png.github.io/ai-assisted-technical-documentation/03-technical-documentation/configuration-guide.html" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Configuration Guide - AI-Assisted Technical Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Configuration Guide";
+        var mkdocs_page_input_path = "03-technical-documentation/configuration-guide.md";
+        var mkdocs_page_url = "/ai-assisted-technical-documentation/03-technical-documentation/configuration-guide.html";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> AI-Assisted Technical Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project Overview</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/product-overview.html">Product Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-product-specifications/feature-specifications.html">Feature Specifications</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Documentation Standards</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/documentation-style-guide.html">Style Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-style-guide/terminology-glossary.html">Terminology Glossary</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="installation-guide.html">Installation Guide</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Configuration Guide</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#configuration-guide">Configuration Guide</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1-purpose">1. Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-configuration-overview">2. Configuration Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-user-and-role-configuration">3. User and Role Configuration</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-available-roles">3.1 Available Roles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-assign-a-user-role">3.2 Assign a User Role</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-infrastructure-monitoring-configuration">4. Infrastructure Monitoring Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-alert-configuration">5. Alert Configuration</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#51-alert-severity">5.1 Alert Severity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#52-alert-status">5.2 Alert Status</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-incident-management-configuration">6. Incident Management Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-security-and-access-control">7. Security and Access Control</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-configuration-review">8. Configuration Review</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-troubleshooting-configuration-issues">9. Troubleshooting Configuration Issues</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-related-documentation">10. Related Documentation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-document-control">11. Document Control</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="troubleshooting-guide.html">Troubleshooting Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="alert-management-guide.html">Alert Management Guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AI Workflow</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-documentation-workflow.html">Documentation Workflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/ai-drafting-process.html">Drafting Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-ai-workflow/human-validation-process.html">Human Validation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Prompt Library</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/technical-drafting-prompts.html">Technical Drafting Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/content-review-prompts.html">Content Review Prompts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-prompt-library/release-notes-prompts.html">Release Notes Prompts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Quality Assurance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/ai-review-checklist.html">AI Review Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-quality-assurance/documentation-audit.html">Documentation Audit</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Release Notes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../07-release-notes/release-notes-v1.1.html">Version 1.1</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Training</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../08-training/instructional-video-script.html">Instructional Video Script</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Evidence</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-source-analysis.html">Source Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-ai-draft-v1.html">Original AI Draft</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/alert-management-review-record.html">Review Record</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-evidence/project-validation-record.html">Project Validation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">AI-Assisted Technical Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Technical Documentation</li>
+      <li class="breadcrumb-item active">Configuration Guide</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="nexus-it-operations-platform">Nexus IT Operations Platform</h1>
+<h2 id="configuration-guide">Configuration Guide</h2>
+<p><strong>Document Type:</strong> Administrator Guide<br />
+<strong>Version:</strong> 1.0<br />
+<strong>Audience:</strong> System Administrators<br />
+<strong>Status:</strong> Portfolio Demonstration</p>
+<hr />
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This guide describes the conceptual configuration areas of the Nexus IT Operations Platform.</p>
+<p>It provides administrators with an overview of user access, monitoring settings, alert configuration, and operational preferences.</p>
+<p><strong>Important:</strong> Nexus is a fictional product created for this portfolio demonstration. The settings and procedures described here are illustrative and do not represent a functioning application.</p>
+<h2 id="2-configuration-overview">2. Configuration Overview</h2>
+<p>Nexus configuration is organized into the following areas:</p>
+<ul>
+<li>User and role management</li>
+<li>Infrastructure monitoring</li>
+<li>Alert management</li>
+<li>Operational preferences</li>
+<li>Security and access control</li>
+</ul>
+<p>Only authorized administrators should perform restricted configuration activities.</p>
+<h2 id="3-user-and-role-configuration">3. User and Role Configuration</h2>
+<p>Administrators manage user accounts and assign roles according to organizational responsibilities.</p>
+<h3 id="31-available-roles">3.1 Available Roles</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Administrator</td>
+<td>Full administrative and operational permissions</td>
+</tr>
+<tr>
+<td>Operations Analyst</td>
+<td>Monitoring, alert investigation, and incident management</td>
+</tr>
+<tr>
+<td>Viewer</td>
+<td>Read-only access to dashboards and reports</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-assign-a-user-role">3.2 Assign a User Role</h3>
+<ol>
+<li>Sign in using an administrator account.</li>
+<li>Open the user management area.</li>
+<li>Select the user account.</li>
+<li>Review the user's current role.</li>
+<li>Select the appropriate role.</li>
+<li>Save the changes.</li>
+<li>Verify that the assigned role is correct.</li>
+</ol>
+<p><strong>Note:</strong> Role changes should follow organizational access-control policies.</p>
+<h2 id="4-infrastructure-monitoring-configuration">4. Infrastructure Monitoring Configuration</h2>
+<p>Administrators are responsible for managing the monitoring configuration.</p>
+<p>Configuration areas may include:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monitored components</td>
+<td>Infrastructure components included in monitoring</td>
+</tr>
+<tr>
+<td>Monitoring status</td>
+<td>Indicates whether monitoring is enabled</td>
+</tr>
+<tr>
+<td>Resource metrics</td>
+<td>CPU, memory, and storage utilization</td>
+</tr>
+<tr>
+<td>Health status</td>
+<td>Operational condition reported for monitored components</td>
+</tr>
+</tbody>
+</table>
+<p>Specific monitoring intervals, thresholds, and integration settings must be defined by the approved product design.</p>
+<h2 id="5-alert-configuration">5. Alert Configuration</h2>
+<p>Alert configuration determines how monitored conditions are presented to operations teams.</p>
+<h3 id="51-alert-severity">5.1 Alert Severity</h3>
+<p>Nexus uses four severity levels:</p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical</td>
+<td>Requires immediate investigation.</td>
+</tr>
+<tr>
+<td>High</td>
+<td>Indicates a significant operational concern.</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>Requires investigation and monitoring.</td>
+</tr>
+<tr>
+<td>Low</td>
+<td>Informational or lower-priority condition.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-alert-status">5.2 Alert Status</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active</td>
+<td>Alert requires review.</td>
+</tr>
+<tr>
+<td>Acknowledged</td>
+<td>Alert has been reviewed by an authorized user.</td>
+</tr>
+<tr>
+<td>Resolved</td>
+<td>The underlying condition has been addressed.</td>
+</tr>
+</tbody>
+</table>
+<p>Severity and status represent different characteristics. An alert's severity does not automatically determine its status.</p>
+<h2 id="6-incident-management-configuration">6. Incident Management Configuration</h2>
+<p>Nexus supports incident tracking through the following status values:</p>
+<ul>
+<li>Open</li>
+<li>In Progress</li>
+<li>Resolved</li>
+<li>Closed</li>
+</ul>
+<p>Administrators and Operations Analysts can manage incidents according to their assigned permissions.</p>
+<p>Incident priority classifications and assignment procedures should follow the organization's operational requirements.</p>
+<h2 id="7-security-and-access-control">7. Security and Access Control</h2>
+<p>Nexus uses role-based access control (RBAC).</p>
+<p>Administrators should:</p>
+<ul>
+<li>Assign roles according to job responsibilities.</li>
+<li>Review permissions before granting access.</li>
+<li>Deactivate accounts that no longer require access.</li>
+<li>Restrict administrative permissions.</li>
+<li>Follow organizational security policies.</li>
+</ul>
+<p>Do not share administrator credentials.</p>
+<h2 id="8-configuration-review">8. Configuration Review</h2>
+<p>Review configuration settings periodically and whenever organizational requirements change.</p>
+<p>A configuration review should include:</p>
+<ol>
+<li>User account status.</li>
+<li>Assigned roles and permissions.</li>
+<li>Monitoring configuration.</li>
+<li>Alert severity definitions.</li>
+<li>Security settings.</li>
+<li>Documentation updates.</li>
+</ol>
+<p>Record relevant configuration changes according to organizational change-management procedures.</p>
+<h2 id="9-troubleshooting-configuration-issues">9. Troubleshooting Configuration Issues</h2>
+<p>If a configuration issue occurs:</p>
+<ol>
+<li>Identify the affected configuration area.</li>
+<li>Review the current settings.</li>
+<li>Compare the settings with approved requirements.</li>
+<li>Verify the user's assigned role.</li>
+<li>Record the issue and the corrective action.</li>
+<li>Escalate unresolved issues to the responsible technical team.</li>
+</ol>
+<h2 id="10-related-documentation">10. Related Documentation</h2>
+<ul>
+<li><a href="../01-product-specifications/product-overview.html">Product Overview</a></li>
+<li><a href="../01-product-specifications/feature-specifications.html">Feature Specifications</a></li>
+<li><a href="getting-started.html">Getting Started Guide</a></li>
+<li><a href="installation-guide.html">Installation Guide</a></li>
+<li><a href="troubleshooting-guide.html">Troubleshooting Guide</a></li>
+<li><a href="../02-style-guide/terminology-glossary.html">Terminology Glossary</a></li>
+</ul>
+<h2 id="11-document-control">11. Document Control</h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>November 16, 2026</td>
+<td>Initial configuration guide</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>This is an illustrative administrator guide for a fictional software product. Product settings and procedures have not been implemented or tested in a live application.</em></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="installation-guide.html" class="btn btn-neutral float-left" title="Installation Guide"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="troubleshooting-guide.html" class="btn btn-neutral float-right" title="Troubleshooting Guide">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="installation-guide.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="troubleshooting-guide.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
